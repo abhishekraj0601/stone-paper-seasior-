@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0; 
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+#msg{
+    display: none;
+    margin-top: 100px;
+    width: fit-content;
+    padding: 20px 30px;
+    /* box-shadow:   inset 5px 10px 15px rgb(0,0,0,0.05),
+    15px 10px 15px rgb(0,0,0,0.05),
+   inset -5px -10px 15px rgb(255 ,255,255,1); */
+    border-radius: 30px;
+}
+#button{
+    position: absolute;
+    top: 80%;
+    display: none;
+}
+#result{
+    color: red;
+    display: none;
+    height: 250px;
+    cursor: pointer;
+    box-shadow:   inset 5px 10px 15px rgb(0,0,0,0.05),
+     15px 10px 15px rgb(0,0,0,0.05),
+    inset -5px -10px 15px rgb(255 ,255,255,1);
+    width: 250px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
+}
+/* #stone::after ,#paper::after ,#sessior::after{
+    content: "";
+    position: relative;
+    width: 120px;
+    top: 90px;
+    border-radius: 50%;
+    height: 30px;
+    background-color: rgb(185, 185, 185);
+} */
+#stone:hover ,#paper:hover ,#sessior:hover{
+    transition: all .3s;
+    color: rgb(0, 0, 255);
+    border-radius: 72% 28% 34% 66% / 52% 38% 62% 48% ;
+}
+body .container:nth-child(1){
+    border: 1px solid red;
+    position: absolute;
+    top: 10%;
+    display: flex;
+    justify-content: space-evenly;
+}
+body .container:nth-child(2){
+    position: absolute;
+    top: 40%;
+    display: flex;
+    justify-content: space-evenly;
+}
+#stone ,#paper ,#sessior{
+   
+    height: 250px;
+    /* color: blue; */
+    cursor: pointer;
+    box-shadow:   inset 5px 10px 15px rgb(0,0,0,0.05),
+     15px 10px 15px rgb(0,0,0,0.05),
+    inset -5px -10px 15px rgb(255 ,255,255,1);
+    width: 250px;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.msg{
+    /* color: white; */
+}
